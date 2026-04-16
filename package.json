@@ -1,0 +1,9 @@
+{
+  "name": "kingdom_project",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.3"
+  }
+}

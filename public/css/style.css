@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+:root {
+    --fonte-home:"Roboto Flex", sans-serif;
+    --tamanho-home: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_marcacao {
+    align-content: end;
+    z-index: 2;
+}
+
+.marcacao_titulo {
+    color: #808080;
+    font-size: 2em;
+}
+
+.imagem_fundo {
+    width: 50vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.container_lista {
+    list-style: none;
+    padding: 50px;
+}
+
+.lista_item {
+    display: block;
+    font-size: 3em;
+}
