@@ -3,6 +3,9 @@
     --fonte-home:"Orbitron", sans-serif;
     --tamanho-home: 20px;
     --cinza-inativo: #808080;
+    --vermelho-opcoes: #c11a1a;
+    --degrade-vertical-vermelho:linear-gradient(180deg, #000000,#000000,#c11a1a);
+    --degrade-horizontal-vermelho:linear-gradient(90deg, #000000,#c11a1a);
 }
 
 .container {
@@ -42,16 +45,30 @@
 .container_lista {
     list-style: none;
     padding: 50px 0 40px 50px;
+    display: block;
 }
 
 .lista_item {
-    display: block;
+    display: flex;
     font-size: 3em;
     font-family: var(--fonte-home);
     margin-bottom: 10px;
     color: var(--cinza-inativo);
     font-weight: 500;
     background-image: linear-gradient(to left, #808080 5%, transparent 25%);
+}
+
+.lista_item::before {
+    content:"";
+    width: 30px;
+    height: 30px;
+    border: 10px solid var(--cinza-inativo);
+    background-color: var(--cinza-inativo);
+}
+
+.lista_item:hover::before {
+    background-color: #fff;
+    border-color: #000;
 }
 
 .borda_bottom {

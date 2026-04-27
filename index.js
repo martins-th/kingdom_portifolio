@@ -28,7 +28,7 @@ app.set('views', './views');
 //rotas
 app.get('/', (req, res) => {
     try {
-        res.render('home');
+        res.render('inicial');
     } catch(error) {
         console.error().send("ocorreu um erro na renderização");
     }
