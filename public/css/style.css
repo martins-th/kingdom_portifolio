@@ -9,7 +9,7 @@
 }
 
 .container {
-    
+    opacity: 0;
 }
 
 .container_marcacao {
@@ -50,7 +50,7 @@
 
 .lista_item {
     display: flex;
-    font-size: 3em;
+    font-size: 35px;
     font-family: var(--fonte-home);
     margin-bottom: 10px;
     color: var(--cinza-inativo);

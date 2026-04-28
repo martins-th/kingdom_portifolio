@@ -34,6 +34,14 @@ app.get('/', (req, res) => {
     }
 });
 
+app.get('/home', (req, res) => {
+    try {
+        res.render('home');
+    } catch(error) {
+        console.error(error).send("ocorreu um erro ao renderizar a página");
+    }
+});
+
 
 
 

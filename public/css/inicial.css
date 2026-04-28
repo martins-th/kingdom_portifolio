@@ -6,8 +6,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 }
-
 
 .inicial_video {
     width: 400px;
@@ -60,5 +60,22 @@
 
 .linha_effect:hover::after {
     background-image: linear-gradient(to right, var(--vermelho-opcoes), transparent);
-
 }
+
+.transicao {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+}
+
+.transicao_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
