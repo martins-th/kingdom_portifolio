@@ -42,6 +42,14 @@ app.get('/home', (req, res) => {
     }
 });
 
+app.get('/sobre', (req, res) => {
+    try {
+        res.render('sobre');
+    } catch (error) {
+        console.error(error).send("ocorreu um erro no carregamento da página");
+    }
+});
+
 
 
 

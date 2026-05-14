@@ -1,0 +1,51 @@
+.sobre_tela {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre_cabecalho {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    gap: 10px;
+}
+
+.sobre_box1 {
+    background-image: var(--degrade-vertical-azul);
+    border-right: 5px solid blue;
+    border-bottom: 5px solid blue;
+    flex: 1;
+}
+
+.sobre_box2 {
+    background-image: var(--degrade-vertical-azul);
+    border-left: 5px solid blue;
+    border-bottom: 5px solid blue;
+    flex: 4;
+}
+
+.sobre_main {
+    flex: 1;
+}
+
+.sobre_rodape {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    gap: 10px;
+}
+
+.sobre_box3 {
+    background-image: var(--degrade-reverso-azul);
+    border-right: 5px solid blue;
+    border-top: 5px solid blue;
+    flex: 3;
+}
+
+.sobre_box4 {
+    background-image: var(--degrade-reverso-azul);
+    border-left: 5px solid blue;
+    border-top: 5px solid blue;
+    flex: 7;
+}

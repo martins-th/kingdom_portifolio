@@ -6,6 +6,9 @@
     --vermelho-opcoes: #c11a1a;
     --degrade-vertical-vermelho:linear-gradient(180deg, #000000,#000000,#c11a1a);
     --degrade-horizontal-vermelho:linear-gradient(90deg, #000000,#c11a1a);
+    --home-btn-luz:radial-gradient(circle, #efebeb 45%, #ff9500 69%, #0000 100%);
+    --degrade-vertical-azul:linear-gradient(0deg, #012b8e,#00134d,#000000);
+    --degrade-reverso-azul:linear-gradient(180deg, #012b8e,#00134d,#000000);
 }
 
 .container {
@@ -67,7 +70,7 @@
 }
 
 .lista_item:hover::before {
-    background-color: #fff;
+    background: var(--home-btn-luz);
     border-color: #000;
 }
 
@@ -89,3 +92,6 @@
     background-image: linear-gradient(to right, #000 20%, transparent 80%);
 }
 
+.hlink_item {
+    text-decoration: none;
+}
