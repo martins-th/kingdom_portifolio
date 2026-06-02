@@ -2,6 +2,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url(../img/tela_sobre.jpg);
 }
 
 .sobre_cabecalho {
@@ -22,11 +23,67 @@
     background-image: var(--degrade-vertical-azul);
     border-left: 5px solid blue;
     border-bottom: 5px solid blue;
-    flex: 4;
+    flex: 5;
+}
+
+.icone_menu {
+    position: absolute;
+    color: white;
+    font-family: var(--fonte-bit);
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 3px 3px 2px #000000;
+    background-color: blue;
+    border-radius: 40px;
+    padding: 5px 60px;
+    margin-top: 40px;
+    margin-left: 12%;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.8);
 }
 
 .sobre_main {
     flex: 1;
+    display: flex;
+    gap: 10px;
+    grid-template-columns: 30% 70%;
+    
+
+}
+
+.s_lista {
+    margin-left: 120px;
+}
+
+.s_item {
+    text-decoration: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.4);
+    padding: 5px 10px;
+    margin: 10px 0;
+    width: 200px;
+    height: 25px;
+    font-size: var(--tamanho-home);
+    font-family: var(--fonte-home);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: -3px -3px 0 2px rgba(255, 255, 255, 0.2), 2px 2px 3px 2px rgba(0, 0, 0, 0.8);
+}
+
+.s_item:hover {
+    color: white;
+    background-image: var(--degrade-vertical-vermelho);
+    margin-left: 20px;
+    border-top: solid 4px rgba(255, 255, 255, 0.2);
+    border-left: solid 4px rgba(255, 255, 255, 0.2);
+    outline: solid 2px red;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.8);
+}
+
+.s_content {
+    padding: 30px;
+    background-color: blue;
+    
 }
 
 .sobre_rodape {
@@ -41,6 +98,65 @@
     border-right: 5px solid blue;
     border-top: 5px solid blue;
     flex: 3;
+}
+
+.footer_lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto1_footer {
+    list-style: none;
+    color: #ff6c24;
+    font-family: var(--fonte-home);
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.texto1_footer::after {
+    content: '';
+    display: block;
+    top: 100%;
+    width: 100%;
+    height: 5px;
+    background-image: radial-gradient(#ff6c24 20%, transparent 60%);
+}
+
+.numero1_footer {
+    list-style: none;
+    font-size: 30px;
+    color: #fda316;
+    text-align: center;
+    margin-left: 30%;
+    font-weight: 900;
+}
+
+.texto2_footer {
+    list-style: none;
+    color: #1754fd;
+    font-family: var(--fonte-home);
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.texto2_footer::after {
+    content: '';
+    display: block;
+    top: 100%;
+    width: 100%;
+    height: 5px;
+    background-image: radial-gradient(#1754fd 20%, transparent 60%);
+}
+
+.numero2_footer {
+    list-style: none;
+    font-size: 30px;
+    color: #0ccdf8;
+    text-align: center;
+    margin-left: 30%;
+    font-weight: 900;
 }
 
 .sobre_box4 {
