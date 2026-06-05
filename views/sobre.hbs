@@ -1,23 +1,74 @@
 <section class="sobre_tela">
     <header class="sobre_cabecalho">
-        <div class="sobre_box1">""</div>
-        <div class="sobre_box2">""</div>
+        <div class="sobre_box1"></div>
+        <div class="sobre_box2"></div>
+        <p class="icone_menu">menu</p>
     </header>
 
     <main class="sobre_main">
         <ul class="s_lista">
-            <li class="s_item">Quem sou</li>
-            <li class="s_item">Minha jornada até aqui</li>
-            <li class="s_item">Profissional</li>
+            <li><button data-target="tela_quem_sou" class="s_btn">Quem sou</button></li>
+            <li><button data-target="tela_curriculo" class="s_btn">Currículo</button></li>
+            <li><button data-target="tela_projetos" class="s_btn">Projetos</button></li>
         </ul>
+        <section class="s_content tela ativa" id="s_tela_inicial">
+            <img class="s_imagem" src="/img/massacote.jpg" alt="mascote">
+            <p class="status_nome">Thiago</p>
+            <ul class="status_lista">
+                <li class="status_item"><p class="item_nivel">LV 24</p></li>
+                <li class="status_item"><p class="item_hp">HP 100/100</p></li>
+                <li class="status_item"><p class="item_mp">MP 50/50</p></li>
+            </ul>
+        </section>
+
+        <section class="tela_qs tela" id="tela_quem_sou">
+            <img class="qs_imagem" src="/img/foto_perfil.jpg" alt="minha foto">
+            <div class="qs_bloco">
+                <ul class="qs_lista">
+                    <li class="qs_item">Nome: Thiago</li>
+                    <li class="qs_item">Idade: 24</li>
+                    <li class="qs_item">Github: martins-th</li>
+                </ul>
+                <p class="qs_texto">
+                    Prazer, me chamo Thiago! Atualmente um simples estudante de ciência da computação
+                    que vê na tecnologia um enorme potencial expressivo para auxiliar diversas áreas 
+                    científicas e artísticas existentes hoje. Iniciei por curiosidade e, no momento, 
+                    estou focando no desenvolvimento web buscando o domínio completo, mais especificamente
+                     full-stack.
+                </p>
+            </div>
+        </section>
+
+        <section class="tela_c tela" id="tela_curriculo">
+            <ul class="c_lista">
+                <li class="c_item">Técnico em Informações Aeronáuticas - EEAR</li>
+                <li class="c_item">4° período de CC - IBMR</li>
+                <li class="c_item">Básico HTML, CSS e JS - Alura</li>
+            </ul>
+        </section>
+
+        <section class="tela_p tela" id="tela_projetos">
+            <ul class="p_lista">
+                <li class="p_item">Site treinamento - Alura</li>
+                <li class="p_item">Projeto Souls - Autoral</li>
+                <li class="p_item">Portifólio Kingdom - Esse site</li>
+            </ul>
+        </section>
+        <!--adicionar links do git para cada projeto da lista-->
     </main>
 
     <footer class="sobre_rodape">
         <div class="sobre_box3">
-
+            <ul class="footer_lista">
+                <li class="texto1_footer">Munny</li>
+                <li class="numero1_footer">999</li>
+                <li class="texto2_footer">Time</li>
+                <li class="numero2_footer">10:00</li>
+            </ul>
         </div>
         <div class="sobre_box4">
 
         </div>
     </footer>
+     <script src="/js/sobre_animations.js"></script>
 </section>
