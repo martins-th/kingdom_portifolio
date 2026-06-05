@@ -7,10 +7,14 @@
     --vermelho-opcoes: #c11a1a;
     --degrade-vertical-vermelho:linear-gradient(180deg, #000000,#000000,#c11a1a);
     --degrade-horizontal-vermelho:linear-gradient(90deg, #000000,#c11a1a);
+    --degrade-vertical-verde: linear-gradient(180deg, #000000,#012801,#12ca1e);
+    --degrade-vertical-amarelo: linear-gradient(180deg, #000000,#272801,#c7ca12);
     --home-btn-luz:radial-gradient(circle, #efebeb 45%, #ff9500 69%, #0000 100%);
     --degrade-vertical-azul:linear-gradient(0deg, #012b8e,#00134d,#000000);
     --degrade-reverso-azul:linear-gradient(180deg, #012b8e,#00134d,#000000);
     --fonte-bit: "Bitcount Grid Single", system-ui;
+    --caixa-sombreada: -3px -3px 1px 2px rgba(255, 255, 255, 0.2), 2px 2px 3px 2px rgba(0, 0, 0, 0.8);
+    --fundo--sombreado: rgba(0, 0, 0, 0.8);
 }
 
 .container {
