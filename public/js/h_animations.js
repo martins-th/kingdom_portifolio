@@ -8,32 +8,34 @@ window.addEventListener('load', () => {
 })
 
 //agora vamos fazer o efeito de pulsar das opções do home
-//primeiro referenciando o link (toda área clicável da opção)
 
-const link = document.querySelector('.hlink_item');
-const botaoH = document.querySelector('.btn_home');
-const luz = document.querySelector('.lista_item:hover::before');
-//coloquei a do botão pois vai ter o mesmo efeito também, mas em uma tag diferente
-//agora sim podemos colocar os efeitos 
-//criando o efeito de pulsar e armazenando em uma variável para poder usar depois
-const pulso = gsap.to(luz, {
-    scale: 2,
+
+const listaLinks = document.querySelectorAll('.hlink_item')
+//o que temos aqui é um array que contem os itens da lista container_lista
+//a ideia é passar por cada um, associar o ponto_luz a cada item e ai sim fazer o eventListener para cada item
+
+listaLinks.forEach((item) => {
+    const luzIndividual = item.querySelector('.ponto_luz');
+    //cada efeito de pulsar está atrelado a uma luz de cada vez
+    const pulsoIndividual = gsap.to(luzIndividual, {
+    scale: 1,
     opacity: 0.8,
     duration: 0.6,
     repeat: -1,
     yoyo: true,
     paused: true,
     ease: "sine.inOut"
-})
+    })
+    //agora sim precisamos utilizar os eventListener para CADA ITEM
 
 
+    item.addEventListener('mouseenter', () => {
+        gsap.to(luzIndividual, {opacity: 1, duration: 0.3});
+        pulsoIndividual.play();
+    })
 
-link.addEventListener('mouseenter', () => {
-    gsap.to(luz, {opacity: 1, duration: 0.3});
-    pulso.play();
-})
-
-link.addEventListener('mouseleave', () => {
-    gsap.to(luz, {opacityy: 0, duration: 0.3});
-    pulso.pause();
+    item.addEventListener('mouseleave', () => {
+        gsap.to(luzIndividual, {opacity: 0, duration: 0.3});
+        pulsoIndividual.pause();
+    })
 })

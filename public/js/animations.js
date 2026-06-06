@@ -5,7 +5,10 @@ const botao = document.querySelector('#btn_start');
 const camada = document.querySelector('#camada_transicao');
 const video = document.querySelector('#video_transicao');
 
-//depois de referenciar, adicionamos as ações
+if (!botao) {
+    console.log("Botão de Start não encontrado nesta página. Script encerrado com segurança.");
+} else {
+    //depois de referenciar, adicionamos as ações
 //esse "e" é um objeto que vai guardar as informações do click
 botao.addEventListener('click', (e) => {
     e.preventDefault(); //impede a mudança de página (ou seja, previne do comportamento padrão)
@@ -27,3 +30,4 @@ botao.addEventListener('click', (e) => {
     }
     //quando o video acabar, quero acessar a url armazenada la no inicio
 });
+}
