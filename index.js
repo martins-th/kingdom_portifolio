@@ -67,6 +67,8 @@ app.get('/curiosidades', (req, res) => {
 })
 
 
-console.log("server rodando");
+const PORT = process.env.PORT || 8081;
 
-app.listen(8081);
+app.listen(PORT, () => {
+    console.log(`server rodando na porta ${PORT}`);
+});
