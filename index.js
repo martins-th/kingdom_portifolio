@@ -50,7 +50,21 @@ app.get('/sobre', (req, res) => {
     }
 });
 
+app.get('/redes', (req, res) => {
+    try{
+        res.render('redes');
+    } catch(error) {
+        console.error(error).send("ocorreu um erro no carregamento da página");
+    }
+});
 
+app.get('/curiosidades', (req, res) => {
+    try{
+        res.render('curiosidades');
+    } catch(error) {
+        console.error(error).send("ocorreu um erro no carregamento da página");
+    }
+})
 
 
 console.log("server rodando");

@@ -1,0 +1,27 @@
+.curiosidades_tela {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-image: url(/img/curiosidades_wallpaper.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c_texto {
+    color: white;
+    padding: 15px;
+    font-size: var(--tamanho-home);
+    font-family: var(--fonte-home);
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.6);
+    border-top: solid 4px rgba(255, 255, 255, 0.2);
+    border-left: solid 4px rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

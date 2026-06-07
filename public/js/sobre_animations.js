@@ -33,7 +33,7 @@ function trocaTelas (idDaTelaEscolhida) {
 botaoSobre.forEach(botoes  => {
     botoes.addEventListener('click', (event) => {
         event.stopPropagation();
-        const alvo = botoes.getAttributte('data-target');
+        const alvo = botoes.getAttribute('data-target');
     trocaTelas(alvo);
     });
 });
