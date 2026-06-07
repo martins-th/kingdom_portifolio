@@ -1,0 +1,28 @@
+.redes_tela {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/redes_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.r_link {
+    text-align: center;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.r_img {
+    width: 200px;
+    height: 200px;
+}
+
+.r_titulo {
+    font-family: var(--fonte-home);
+    font-size: var(--tamanho-home);
+    color: white;
+}
